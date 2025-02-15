@@ -8,78 +8,154 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1a2a3d 0%, #2a4858 100%);
-            color: white;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .hero-section {
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 64px;
-            margin-bottom: 20px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            letter-spacing: 1px;
-        }
-
-        .hero-subtitle {
-            font-size: 28px;
-            font-weight: 500;
-            color: #00ff9d;
-            margin-bottom: 30px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            background: linear-gradient(45deg, #00ff9d, #00ccff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: none;
-        }
-
-        .hero-description {
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
-            color: #e0e0e0;
-            font-weight: 300;
-            font-size: 18px;
             padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .experience-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .experience-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
             backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
         }
 
-        .highlight {
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .company {
             color: #00ff9d;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .position {
+            color: white;
+            font-size: 18px;
             font-weight: 500;
+        }
+
+        .duration {
+            color: #a0a0a0;
+            font-size: 14px;
+            margin: 5px 0 15px 0;
+        }
+
+        .description {
+            color: #e0e0e0;
+            line-height: 1.6;
+            font-weight: 300;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <section class="hero-section">
-            <h1 class="hero-title">Srikar Gaddipati</h1>
-            <h2 class="hero-subtitle">Senior Software Engineer | Cloud Architecture Specialist</h2>
-            <p class="hero-description">
-                Innovative <span class="highlight">Software Architect</span> with expertise in designing and implementing 
-                enterprise-scale cloud solutions. Specializing in <span class="highlight">Java microservices</span>, 
-                cloud-native architectures, and distributed systems. Passionate about creating scalable, resilient 
-                applications that drive business transformation through technology excellence.
-            </p>
-        </section>
+    <div class="header">
+        <h1>Professional Experience</h1>
+        <p>My Journey in Software Development</p>
     </div>
+
+    <div class="experience-section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div id="experiences">
+            <!-- Experience cards will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        const experiences = [
+            {
+                company: "Deutsche Bank",
+                position: "Associate Software Engineer",
+                duration: "Sep 2023 - Present",
+                description: `• Architected and implemented RESTful microservices using Spring Boot, reducing system latency by 40%
+• Designed and integrated secure payment gateway solutions with OAuth2 and JWT authentication
+• Developed comprehensive API documentation using Swagger/OpenAPI, improving team collaboration by 50%
+• Implemented automated testing strategies achieving 90% code coverage using JUnit and Mockito
+• Established CI/CD pipelines using Jenkins and Docker, reducing deployment time by 60%
+• Optimized database queries and implemented caching solutions, improving response times by 45%
+• Led agile ceremonies and mentored junior developers in best practices and design patterns`
+            },
+            {
+                company: "UNC Charlotte",
+                position: "Teaching/Instruction Assistant",
+                duration: "Aug 2022 - May 2023",
+                description: `• Instructed and mentored 72 students in advanced Software Development methodologies and practices
+• Designed and evaluated programming assignments focusing on Java, Spring Boot, and microservices
+• Created comprehensive assessment criteria and grading rubrics for course projects
+• Conducted one-on-one sessions to help students with complex programming concepts
+• Facilitated weekly lab sessions focusing on practical software development skills
+• Collaborated with professors to improve course content and learning outcomes`
+            },
+            {
+                company: "IBM(Kyndryl)",
+                position: "Software Engineer",
+                duration: "Oct 2019 - Oct 2021",
+                description: `• Spearheaded the migration of monolithic applications to microservices architecture using Spring Cloud
+• Implemented containerization using Docker and Kubernetes, improving scalability by 70%
+• Developed and maintained RESTful APIs serving 1M+ daily requests with 99.9% uptime
+• Integrated Kotlin services with existing Java applications, enhancing system functionality
+• Optimized database performance through indexing and query optimization, reducing latency by 50%
+• Led code reviews and implemented coding standards across multiple development teams
+• Managed deployment pipelines in AWS, implementing auto-scaling and monitoring solutions`
+            },
+            {
+                company: "Infosys",
+                position: "Software Engineer(Intern)",
+                duration: "Jan 2019 - May 2019",
+                description: `• Developed responsive web applications using React.js and Redux, improving user engagement by 35%
+• Implemented RESTful APIs using Spring Boot and Hibernate for efficient data management
+• Created automated test suites achieving 85% code coverage using Jest and JUnit
+• Participated in agile development cycles, contributing to sprint planning and daily standups
+• Optimized application performance through code refactoring and implementing best practices`
+            }
+        ];
+
+        function createExperienceCards() {
+            const container = document.getElementById('experiences');
+            experiences.forEach(exp => {
+                const card = document.createElement('div');
+                card.className = 'experience-card';
+                card.innerHTML = `
+                    <div class="company">${exp.company}</div>
+                    <div class="position">${exp.position}</div>
+                    <div class="duration">${exp.duration}</div>
+                    <div class="description">${exp.description}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        createExperienceCards();
+    </script>
 </body>
 </html> 
