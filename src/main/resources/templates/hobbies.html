@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+    <div th:fragment="content">
+        <div class="hobbies-section">
+            <h1 class="section-title">Hobbies & Interests</h1>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Coding</h3>
+                    <p>Exploring new technologies and building side projects</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Reading</h3>
+                    <p>Technical books and software architecture patterns</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Music</h3>
+                    <p>Playing guitar and exploring different genres</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Hiking</h3>
+                    <p>Exploring nature trails and outdoor activities</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Srikar Gaddipati - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="nav-brand">Srikar Gaddipati</h2>
+            <div class="nav-links">
+                <a th:href="@{/}" class="nav-link">Home</a>
+                <a th:href="@{/about}" class="nav-link">About</a>
+                <a th:href="@{/contact}" class="nav-link">Contact</a>
+                <a th:href="@{/hobbies}" class="nav-link">Hobbies</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div th:replace="${content}">
+            <!-- Content will be inserted here -->
+        </div>
+    </div>
+</body>
+</html> 
