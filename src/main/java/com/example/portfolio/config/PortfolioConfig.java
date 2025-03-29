@@ -19,13 +19,14 @@ public class PortfolioConfig {
                 .position("Associate Software Engineer")
                 .duration("Sep 2023 - present")
                 .description(
-                    "• Architected and implemented RESTful microservices using Spring Boot, reducing system latency by 40%\n" +
-                    "• Designed and integrated secure payment gateway solutions with OAuth2 and JWT authentication\n" +
-                    "• Developed comprehensive API documentation using Swagger/OpenAPI, improving team collaboration by 50%\n" +
-                    "• Implemented automated testing strategies achieving 90% code coverage using JUnit and Mockito\n" +
-                    "• Established CI/CD pipelines using Jenkins and Docker, reducing deployment time by 60%\n" +
-                    "• Optimized database queries and implemented caching solutions, improving response times by 45%\n" +
-                    "• Led agile ceremonies and mentored junior developers in best practices and design patterns"
+                    "• Designed and implemented REST APIs and backend services for cloud-native applications using Spring Boot; optimized authentication, data reconciliation, and large-scale file processing, improving system efficiency by 40% and reducing processing time by 60%\n" +
+                "• Implemented Spring Security to ensure robust authentication and authorization mechanisms within large-scale web applications, securing APIs and integrating with authentication providers\n" +
+                "• Developed a reliable messaging system using Spring Boot and JMS with IBM MQ and Kafka to enable seamless inter-service communication\n" +
+                "• Built a high-performance, fault-tolerant system for retrieving and processing 100K+ row tab-delimited files from SFTP; utilized multi-threading and DB-level tracking for speed and resilience\n" +
+                "• Applied TDD and BDD practices with JUnit and Mockito, increasing unit test coverage and reducing bugs in production\n" +
+                "• Enhanced real-time MySQL data processing with dynamic JSON filtering, reducing database load and improving performance in high-traffic systems like finance and inventory\n" +
+                "• Designed and implemented CI/CD pipelines using Jenkins, Maven, and Docker, cutting deployment time by 40% and ensuring smooth integration with Kubernetes and OpenShift\n" +
+                "• Spearheaded the migration from OCP3 to OCP4 using Kubernetes, Docker, Helm, and OpenShift Operators, automating 40% of manual configurations and enabling GCP service integration"
                 )
                 .build(),
                 
