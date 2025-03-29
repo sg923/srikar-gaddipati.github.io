@@ -19,15 +19,14 @@ public class PortfolioConfig {
                 .position("Associate Software Engineer")
                 .duration("Sep 2023 - present")
                 .description(
-                    "• Designed and implemented REST APIs and backend services for cloud-native applications using Spring Boot; optimized authentication, data reconciliation, and large-scale file processing, improving system efficiency by 40% and reducing processing time by 60%\n" +
-                "• Implemented Spring Security to ensure robust authentication and authorization mechanisms within large-scale web applications, securing APIs and integrating with authentication providers\n" +
-                "• Developed a reliable messaging system using Spring Boot and JMS with IBM MQ and Kafka to enable seamless inter-service communication\n" +
-                "• Built a high-performance, fault-tolerant system for retrieving and processing 100K+ row tab-delimited files from SFTP; utilized multi-threading and DB-level tracking for speed and resilience\n" +
-                "• Applied TDD and BDD practices with JUnit and Mockito, increasing unit test coverage and reducing bugs in production\n" +
-                "• Enhanced real-time MySQL data processing with dynamic JSON filtering, reducing database load and improving performance in high-traffic systems like finance and inventory\n" +
-                "• Designed and implemented CI/CD pipelines using Jenkins, Maven, and Docker, cutting deployment time by 40% and ensuring smooth integration with Kubernetes and OpenShift\n" +
-                "• Spearheaded the migration from OCP3 to OCP4 using Kubernetes, Docker, Helm, and OpenShift Operators, automating 40% of manual configurations and enabling GCP service integration"
-                )
+                    "• Built scalable Spring Boot REST APIs and backend services for cloud-native apps, improving performance by 40%\n" +
+                "• Secured microservices using Spring Security, OAuth2, and JWT for robust auth flows\n" +
+                "• Integrated JMS with IBM MQ and Kafka for reliable async messaging across services\n" +
+                "• Engineered multi-threaded SFTP file processing (100K+ rows), enabling fault-tolerant data ingestion\n" +
+                "• Followed TDD/BDD practices using JUnit and Mockito, enhancing code quality and stability\n" +
+                "• Optimized MySQL data filtering with dynamic JSON parsing for high-throughput systems\n" +
+                "• Automated CI/CD using Jenkins, Maven, Docker; reduced deployment time by 40%\n" +
+                "• Led OCP3 to OCP4 migration using Helm, Kubernetes, and OpenShift Operators, enabling GCP integration"
                 .build(),
                 
             Experience.builder()
