@@ -27,6 +27,7 @@ public class PortfolioConfig {
                 "• Optimized MySQL data filtering with dynamic JSON parsing for high-throughput systems\n" +
                 "• Automated CI/CD using Jenkins, Maven, Docker; reduced deployment time by 40%\n" +
                 "• Led OCP3 to OCP4 migration using Helm, Kubernetes, and OpenShift Operators, enabling GCP integration"
+                )    
                 .build(),
                 
             Experience.builder()
